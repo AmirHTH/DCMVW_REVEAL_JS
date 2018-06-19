@@ -24,12 +24,50 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="//imagenes/comunicazione.jpg">
+				<section  data-state="parallaxOff">			
+				<img width="30%" data-src="imagenes/comunicazione.jpg" alt="coms"  style="border:0;">
+				
 				<h2>Difusión de Contenidos Multimedia Vía Web</h2>
+				<h4>Máster de Ingeniería Web</h4>
 				<h4>Documentación de la práctica</h4>
-				<p class="fragment fade-up"><strong>UO240753</strong></p>
+				<p class="fragment highlight-red"><strong>UO240753</strong></p>
+
 				</section>
-				<section>Slide 2</section>
+				
+				<section data-state="parallax">				
+				<h2>Reproductor Video</h2>
+					<section data-state="parallax">		
+						<p>Dispone de un:</p>
+						<ul>
+							<h3><li>Servidor</li></h3>
+							<h3><li>Cliente</li></h3>
+						</ul>
+					</section>
+				
+					<section data-state="parallax">				
+						<h4>Servidor</h4>
+					
+					</section>
+					<section data-state="parallax">				
+						<h4>Cliente</h4>
+					
+					</section>
+				</section>
+				<section data-state="parallax">				
+				<h2>Dibujo Colaborativo</h2>
+				
+				</section >
+				
+				<section data-state="parallax">				
+				<h2>Chat</h2>
+				
+				</section>			
+				
+				<section data-state="parallax">				
+				<h2>Alumno</h2>
+				
+				</section>						
+
 			</div>
 		</div>
 
@@ -47,7 +85,23 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
-			});
+			});	
+			
+			Reveal.addEventListener('parallax', function() {
+                Reveal.configure({
+                    parallaxBackgroundImage: 'imagenes/colorful.jpg', //Parallax background image
+                    parallaxBackgroundSize: '', //CSS syntax, e.g. "2100px 900px" // Parallax background size
+                    parallaxBackgroundHorizontal: 400, //Number of pixels to move the parallax background per slide (horizontal)
+                    parallaxBackgroundVertical:400 //Number of pixels to move the parallax background per slide (vertical)
+                });
+            });
+            Reveal.addEventListener('parallaxOff', function() {
+                Reveal.configure({
+                    parallaxBackgroundImage: '', // Parallax background image
+                });
+            });
+
+			
 		</script>
 	</body>
 </html>
