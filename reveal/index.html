@@ -37,61 +37,130 @@
 				<section data-state="parallax">				
 				<h2>Pinturillo Online</h2>
 					<section data-state="parallax">	
-							<p class="fragment grow">Herramienta de dibujo colaborativo</p>	
-						<p>con:</p>
+						<p class="fragment grow">Herramienta de dibujo colaborativo</p>	
+						<p>El dibujo nunca se pierde, aunque este con 0 usuarios.</p>	
+						<p>Siempre que alguien conecta, se le envia el último dibujo y continua trabajando.</p>							
 						<ul>
-							<h3><li><a href="#/1/1">Contador de usuarios</a></li></h3>
-							<h3><li><a href="#/1/2">Export a TXT</a></li></h3>
+							<h4><li><a href="#/1/1">Contador de usuarios</a></li></h4>
+							<h4><li><a href="#/1/2">Export a TXT</a></li></h4>
+							<h4><li><a href="#/1/3">tintero</a></li></h4>
+							<h4><li><a href="#/1/4">URL y ws</a></li></h4>
 						</ul>
 					</section>
 				
 					<section data-state="parallax">				
 						<h4 class="fragment grow">Contador de usuarios</h4>
-						<p class="fragment" data-fragment-index="1" style="text-align: justify;">Se ha incorporado bajo el recuadro de dibujo un boton para desconectar de manera segura.</p>
-						<p class="fragment" data-fragment-index="2" style="text-align: justify;">Cadavez que un usuario conecta o desconecta se envia una señal al servidor y se modifica el contador</p>
+						<p class="fragment" data-fragment-index="1" style="text-align: justify;">Cadavez que un usuario conecta o desconecta se envia una señal al servidor y se modifica el contador</p>
+						<p class="fragment" data-fragment-index="2" style="text-align: justify;">Se ha incorporado bajo el recuadro de dibujo un boton para desconectar de manera segura.</p>
+						<p class="fragment" data-fragment-index="3" style="text-align: justify;">El numero de usuarios online se puede seguir desde la consola.</p>
 					
 					</section>
 					<section data-state="parallax">				
 						<h4 class="fragment grow">Export a TXT</h4>
 						<p class="fragment" data-fragment-index="1" style="text-align: justify;">Se ha incorporado bajo el recuadro de dibujo un boton para exportar el canvas en formato JSon en un archivo de texto.</p>
-						<p class="fragment" data-fragment-index="2"  style="text-align: justify;">Según la configuración del navegador se descarga automaticamente o preguntará donde almacenar el archivo.</p>
+						<p class="fragment" data-fragment-index="2" style="text-align: justify;">Según la configuración del navegador se descarga automaticamente o preguntará donde almacenar el archivo.</p>
+					
+					</section>
+					<section data-state="parallax">				
+						<h4 class="fragment grow">El Tintero</h4>
+						<p style="text-align: justify;">Se empezo a hacer el login de usuarios, la parte html y algo del JS se completó.</p>
+						<p style="text-align: justify;">Al darme cuenta del tiempo que me llevaria hacer una BD para usuarios, lo deje para lo último.</p>
+						<p style="text-align: justify;">Obviamente, no hubo tiempo suficiente para este opcional.</p>
+						
+					
+					</section>
+					<section data-state="parallax">				
+						<h4 class="fragment grow">URL y ws</h4>
+						<a style="text-align: justify;" href="http://UO240753.duckdns.org:3080">URL: http://UO240753.duckdns.org:3080</a>
+						<p style="text-align: justify;">Si se desea hacer un despliegue local sedebe modificar el archivo script.js y cambiar el ws a localhost:9001</p>
+						<a style="text-align: justify;" href="https://github.com/AmirHTH/DibujilloOnline">Código fuente: Github DibujilloOnline</a>
 					
 					</section>
 				</section>
 				<section data-state="parallax">				
-				<h2>Dibujo Colaborativo</h2>
+				<h2>Web Responsive</h2>
 					<section data-state="parallax">				
-						<h4>URL:</h4>
+						<p class="fragment grow">Web que se adapta a diferentes formatos de pantalla</p>	
+						<p>Temática culinaria.Cada semana una receta. Sección de videorecetas y galería con fotos de la comunidad. Con una pequeña emisora de radio para amenizar.</p>	
+						<ul>
+							<h4><li><a href="#/2/1">Responsive con GRID I</a></li></h4>
+							<h4><li><a href="#/2/2">Codigo GRID</a></li></h4>
+							<h4><li><a href="#/2/3">Galería</a></li></h4>
+							<h4><li><a href="#/2/4">Videos</a></li></h4>
+							<h4><li><a href="#/2/5">Videos plataformas</a></li></h4>
+							<h4><li><a href="#/2/6">URL de despliegue</a></li></h4>
+						</ul>					
+					</section>
 					
+					<section data-state="parallax">				
+						<h4 class="fragment grow">Responsive con GRID</h4>
+						<p style="text-align: justify;">Este grid encpasula a toda la web y la hace responsive para cualquier tamaño de pantalla</p>
+						<p style="text-align: justify;">Se ha evitado el uso de margenes o paddings laterales en la web para evitar "feos" al escalar la web</p>
+					</section>
+					
+					<section data-state="parallax">				
+						<h4 class="fragment grow">Código GRID</h4>
+						<p style="text-align: justify;"><code>Areas: grid-template-areas</code> con 6 columnas</p> 
+						<p style="text-align: justify;">Primera línea con 6 columnas de <code>header</code></p>
+						<p style="text-align: justify;">Cuerpo principal con 4 columnas de <code>main</code> y 2 de decoaracion a los lados <code>deco1 y deco2</code> </p> 
+						<p style="text-align: justify;">Última línea con 6 columnas de <code>footer </code></p>
+					</section>
+					
+					<section data-state="parallax">				
+						<h4 class="fragment grow">Galería</h4>
+						<p style="text-align: justify;">Se ha evitado el uso de margenes laterales, para un correcto escalado en tamaños de pantalla</p>
+						<p style="text-align: justify;">Se hace uso de animaciones CSS y encapsulado para dar sensacion de "botón"</p>
+						<p style="text-align: justify;">El componente (css, js y html) está comentado y listo para ser exportado a cualquier web</p>
+					</section>
+					
+					<section data-state="parallax">				
+						<h4 class="fragment grow">Videos</h4>
+						<p style="text-align: justify;">Se ha respetado los tamaños y controles de los diferentes IFRAMES de las plataformas de stream.</p>
+						<p style="text-align: justify;">Para minimizar el impacto visual ocasioado por los iframes se han colocado sobre un fondo negro</p>
+						<p style="text-align: justify;">Los videos tienen un ligero zoom para facilitar su visualización en monitores pequeños. </p>	
+						<p style="text-align: justify;">El componente (css, js y html) está comentado y listo para ser exportado a cualquier web</p>						
+					</section>
+					<section data-state="parallax">				
+						<h4 class="fragment grow">Videos Plataformas</h4>
+						<p style="text-align: justify;">Las plataformas usadas son: </p>
+						<ul>
+							<li>Youtube</li>
+							<li>Vimeo</li>
+							<li>Dailymotion</li>
+						</ul>
+						<p style="text-align: justify;">Estas plataformas son consultadas mediante ajax para comprobar la disponibilidad del video en dicha plataforma.</p>
+					</section>
+					
+					<section data-state="parallax">				
+						<h4 class="fragment grow">URL de despliegue</h4>
+						<a style="text-align: justify;" href="http://uo240753.duckdns.org:3080/blog/cocina.html">URL: http://uo240753.duckdns.org:3080/blog/cocina.html</a>
+						<a style="text-align: justify;" href="https://github.com/AmirHTH/DibujilloOnline/tree/master/html/blog">Código fuente: Github DibujilloOnline/html/blog</a>				
 					</section>
 				
 				</section >
 				
-				<section data-state="parallax">				
-				<h2>Chat</h2>
-					<section data-state="parallax">				
-						<h4>URL:</h4>
-					
-					</section>
 				
-				</section>	
-
 				<section data-state="parallax">				
 				<h2>Winamp Radio</h2>
 					<section data-state="parallax">				
-						<h4>URL:</h4>
-					
+						<p class="fragment grow">Emisora radio</p>
+						<a style="text-align: justify;" href="http://uo240753.duckdns.org:8001">URL: http://uo240753.duckdns.org:8001</a>											
 					</section>
 				
 				</section>					
 				
 				<section data-state="parallax">				
-				<h2>Alumno</h2>
-				<h3 class="fragment highlight-green fragment fade-up"><strong>UO240753</strong></h3>
-				<h2 class="fragment highlight-blue fragment fade-up"><strong>Amir H. Tofigh Halati</strong></h3>
-				<h3 class="fragment highlight-red fragment fade-up"><strong>45354165M</strong></h3>
+				<h4>Alumno</h4>
+				<p class="fragment highlight-green fragment fade-up"><strong>UO240753</strong></p>
+				<p class="fragment fade-up"><strong>Amir H. Tofigh Halati - 45354165M</strong></p>
+				<p style="text-align: justify;">Debido a que mi máquina UNIOVI estaba caida he desplegado en mi casa. Se usa duckdns.org para enlazar la IP dinamica con la url proporcionada. Este enlace se puede perder en caso de cambio de ip durante 5 min.</p>
+				<p class="fragment highlight-red" style="text-align: justify;">Ruego notifique la corrección para poder levantar el firewall y cerrar puertos ya que duckdns.org es un coladero de hackers :( </p>
 				
-				</section>						
+				</section>	
+				
+				<section data-state="parallax">							
+					<h3 style="text-align: justify;">Gracias</h3>		
+				</section>			
 
 			</div>
 		</div>
